@@ -52,7 +52,7 @@ interface RepositoryInterface
    * @param array $columns
    * @return mixed
    */
-  public function findWhere( array $where , $columns = array('*'));
+  public function findWhere(array $where, $columns = array('*'));
 
   /**
    * Find data by multiple values in one field
@@ -62,7 +62,7 @@ interface RepositoryInterface
    * @param array $columns
    * @return mixed
    */
-  public function findWhereIn( $field, array $values, $columns = array('*'));
+  public function findWhereIn($field, array $values, $columns = array('*'));
 
   /**
    * Find data by excluding multiple values in one field
@@ -72,7 +72,7 @@ interface RepositoryInterface
    * @param array $columns
    * @return mixed
    */
-  public function findWhereNotIn( $field, array $values, $columns = array('*'));
+  public function findWhereNotIn($field, array $values, $columns = array('*'));
 
   /**
    * Save a new entity in repository

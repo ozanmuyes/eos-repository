@@ -15,16 +15,14 @@
   },
   "require": {
     "php": ">=5.5.9",
-    "illuminate/http": "~5.1",
-    "illuminate/config": "~5.1",
-    "illuminate/support": "~5.1",
-    "illuminate/database": "~5.1",
-    "illuminate/pagination": "~5.1",
-    "illuminate/console": "~5.1",
-    "illuminate/filesystem": "~5.1"
-  },
-  "require-dev": {
-    "barryvdh/laravel-ide-helper": "v2.1.0"
+    "illuminate/http": "~5.1.11",
+    "illuminate/config": "~5.1.11",
+    "illuminate/support": "~5.1.11",
+    "illuminate/database": "~5.1.11",
+    "illuminate/pagination": "~5.1.11",
+    "illuminate/console": "~5.1.11",
+    "illuminate/filesystem": "~5.1.11",
+    "league/fractal": "~0.13"
   },
   "autoload": {
     "psr-4": {
@@ -35,6 +33,5 @@
     "branch-alias": {
       "dev-master": "0.1-dev"
     }
-  },
-  "minimum-stability": "dev"
+  }
 }
