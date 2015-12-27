@@ -11,22 +11,41 @@ use $MODEL_NAMESPACE$\$CLASS$;
  */
 class $CLASS$Transformer extends TransformerAbstract
 {
+  /**
+   * List of resources possible to include
+   *
+   * @var array
+   */
+  protected $availableIncludes = [
+    "things"
+  ];
 
-    /**
-     * Transform the \$CLASS$ entity
-     * @param \$CLASS$ $model
-     *
-     * @return array
-     */
-    public function transform($CLASS$ $model)
-    {
-        return [
-            'id'         => (int) $model->id,
+  /**
+   * Include 'things' for individual record.
+   *
+   * @param \$CLASS$ $model
+   * @return \League\Fractal\Resource\Item
+   */
+  public function includeThings($CLASS$ $model)
+  {
+    return $this->item($model->things(), new ThingTransformer, "things");
+  }
 
-            /* place your other model properties here */
+  /**
+   * Transform the \$CLASS$ entity
+   *
+   * @param \$CLASS$ $model
+   * @return array
+   */
+  public function transform($CLASS$ $model)
+  {
+    return [
+      'id' => (int) $model->id,
 
-            'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
-        ];
-    }
+      /* place your other model properties here */
+
+      'created_at' => $model->created_at->->toIso8601String(),
+      'updated_at' => $model->updated_at->->toIso8601String()
+    ];
+  }
 }

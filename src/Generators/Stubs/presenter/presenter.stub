@@ -7,18 +7,17 @@ use Eos\Repository\Presenter\FractalPresenter;
 
 /**
  * Class $CLASS$Presenter
- *
  * @package $NAMESPACE$
  */
 class $CLASS$Presenter extends FractalPresenter
 {
-    /**
-     * Transformer
-     *
-     * @return \League\Fractal\TransformerAbstract
-     */
-    public function getTransformer()
-    {
-        return new $CLASS$Transformer();
-    }
+  /**
+   * Transformer
+   *
+   * @return \League\Fractal\TransformerAbstract
+   */
+  public function getTransformer()
+  {
+    return new $CLASS$Transformer();
+  }
 }

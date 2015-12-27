@@ -8,8 +8,7 @@ use Eos\Repository\Traits\TransformableTrait;
 
 class $CLASS$ extends Model implements Transformable
 {
-    use TransformableTrait;
+  use TransformableTrait;
 
-    protected $fillable = $FILLABLE$;
-
+  protected $fillable = $FILLABLE$;
 }
