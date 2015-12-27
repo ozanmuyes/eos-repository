@@ -1,0 +1,30 @@
+{
+  "name": "ozanmuyes/eos-repository",
+  "description": "Laravel 5.1 repository pattern implementation",
+  "keywords": ["laravel", "repository", "eloquent", "model", "cache"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ozan Müyesseroğlu",
+      "email": "ozanmuyes@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "ozanmuyes@gmail.com"
+  },
+  "require": {
+    "illuminate/http": "~5.1",
+    "illuminate/config": "~5.1",
+    "illuminate/support": "~5.1",
+    "illuminate/database": "~5.1",
+    "illuminate/pagination": "~5.1",
+    "illuminate/console": "~5.1",
+    "illuminate/filesystem": "~5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eos\\Repository\\": "src/Eos/Repository/"
+    }
+  }
+}
