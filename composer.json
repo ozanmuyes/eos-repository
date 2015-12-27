@@ -14,6 +14,7 @@
     "email": "ozanmuyes@gmail.com"
   },
   "require": {
+    "php": ">=5.5.9",
     "illuminate/http": "~5.1",
     "illuminate/config": "~5.1",
     "illuminate/support": "~5.1",
@@ -22,9 +23,18 @@
     "illuminate/console": "~5.1",
     "illuminate/filesystem": "~5.1"
   },
+  "require-dev": {
+    "barryvdh/laravel-ide-helper": "v2.1.0"
+  },
   "autoload": {
     "psr-4": {
-      "Eos\\Repository\\": "src/Eos/Repository/"
+      "Eos\\Repository\\": "src/"
     }
-  }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  },
+  "minimum-stability": "dev"
 }
